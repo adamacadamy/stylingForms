@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="form-container">
+       <form action="#" method="post">
+
+        <h2>Contact Us</h2>
+        <!-- 
+            input types are the following:-
+              text
+              email
+              password
+              number
+              date
+              radio
+              checkbox
+              file
+              submit
+              reset
+              button
+              ....
+        -->
+        <!-- 
+         form-group is a wrapper class for form elements
+            label is used to give a name to the input field
+            input is used to take input from the user
+                input attributes:
+                    type: type of input field
+                    id: id of the input field
+                    placeholder: it is used to show a message in the input field
+                    name: name of the input field
+                        {name: value}  
+                        name is the key and value is the value of the input field
+                        {name: "Adam Fuzum"}
+                    required: it is used to make the input field required
+                     if field is empty then it will show a message to fill the field
+
+                Name Field
+                
+        -->
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="please write your name here" required/>
+        </div>
+
+        <!-- Email Field  -->
+         <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="please write your email here" required/>
+         </div>
+    
+         <!-- Message Field -->
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="please write your message here" required></textarea>
+
+          </div>
+
+          <div class="form-group form-group-centered">
+            <label for="task-progress">Progress:</label>
+            <progress id="task-progress" value="50" max="100" nam="task-progress"></progress>
+          </div>
+            <div class="form-button-group">
+           <!-- 
+            two ways of creating buttons
+                1. input <input type="submit" value="Submit" name="submit"> 
+                2. button <button type="submit">Submit</button>
+           -->
+            <!-- Submit Button -->
+            <button type="submit">Submit</button>
+            <!-- <input type="submit" value="Submit" name="submit"> -->
+
+            <!-- Reset Button -->
+            <button type="reset">Reset</button>
+            <!-- <input type="reset" value="Reset" name="reset"> -->
+        </div>
+
+
+       </form>
+
+    </div>
+</body>
+</html>
